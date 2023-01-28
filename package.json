@@ -1,0 +1,21 @@
+{
+  "name": "project-management",
+  "version": "1.0.0",
+  "description": "Build a project management application for an enterprise using the MERN stack (MongoDB, ExpressJS, ReactJS and NodeJS) and Redux.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon server/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon server/server"
+  },
+  "author": "Oussema Touaibi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
