@@ -1,12 +1,12 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import AppBar from '../components/AppBar';
-import Toolbar from '../components/Toolbar.js';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import AppBar from "../components/AppBar";
+import Toolbar from "../components/Toolbar.js";
 
 const rightLink = {
   fontSize: 14,
-  color: 'common.white',
+  color: "common.white",
   ml: 3,
 };
 
@@ -14,8 +14,8 @@ function AppAppBar() {
   return (
     <div>
       <AppBar position="fixed">
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Box  />
+        <Toolbar sx={{ justifyContent: "space-between" }}>
+          <Box />
           <Link
             variant="h6"
             underline="none"
@@ -23,25 +23,25 @@ function AppAppBar() {
             href="/"
             sx={{ fontSize: 18 }}
           >
-            {'Project Management'}
+            {"Project Management"}
           </Link>
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+          <Box sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
             <Link
               color="inherit"
               variant="h6"
               underline="none"
-              href="#"
+              href="/signin"
               sx={rightLink}
             >
-              {'Sign In'}
+              {"Sign In"}
             </Link>
             <Link
               variant="h6"
               underline="none"
-              href="#"
-              sx={{ ...rightLink, color: 'secondary.main' }}
+              href="/signup"
+              sx={{ ...rightLink, color: "secondary.main" }}
             >
-              {'Sign Up'}
+              {"Sign Up"}
             </Link>
           </Box>
         </Toolbar>
