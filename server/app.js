@@ -1,4 +1,8 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const errorMiddleware = require("./middleware/errors");
 
-module.exports = app
+//Middleware to handle errors
+app.use(errorMiddleware);
+
+module.exports = app;
